@@ -6,7 +6,12 @@
     "skipLibCheck": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "strict": true
+    "strict": true,
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": false
   },
   "include": ["src/*.tsx", "src/*.ts"],
   "exclude": ["node_modules"]

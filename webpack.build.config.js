@@ -1,5 +1,5 @@
 /* eslint import/no-extraneous-dependencies: 0 */
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 const path = require('path')
 
 if (process.env.NODE_ENV !== 'production') {
@@ -11,8 +11,13 @@ function createConfig(entry, output) {
     mode: 'production',
     entry,
     output,
+    externals: {
+      'react': 'react',
+      'react-dom': 'react-dom',
+      'prop-types': 'prop-types'
+    },
     optimization: {
-      minimizer: [new UglifyJSPlugin()],
+      minimizer: [new TerserPlugin()],
     },
     module: {
       rules: [
@@ -23,12 +28,17 @@ function createConfig(entry, output) {
         },
         {
           test: /\.css$/,
-          loaders: ['style-loader', 'css-loader'],
+          use: ['style-loader', 'css-loader'],
         },
         {
           test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
           exclude: /node_modules/,
-          loader: 'url-loader?limit=10000',
+          use: {
+            loader: 'url-loader',
+            options: {
+              limit: 10000
+            }
+          },
         },
       ],
     },

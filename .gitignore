@@ -2,6 +2,7 @@
 /node_modules
 /website/node_modules
 
+
 ## docs
 /website/i18n
 /website/build
@@ -18,7 +19,7 @@ examples/src/index.js
 .DS_Store
 .env
 
-**/*.js
-**/*.d.ts
+#**/*.js
+#**/*.d.ts
 
 package-lock.json

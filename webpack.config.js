@@ -17,16 +17,23 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loaders: ['style-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
         exclude: /node_modules/,
-        loader: 'url-loader?limit=10000',
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 10000
+          }
+        },
       },
     ],
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'examples', 'dist'),
+    static: {
+      directory: path.resolve(__dirname, 'examples', 'dist'),
+    },
   },
 }
