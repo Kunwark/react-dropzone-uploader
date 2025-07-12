@@ -72,7 +72,7 @@ class HomeSplash extends React.Component {
               Quick Start
             </Button>
 
-            <Button href="https://github.com/fortana-co/react-dropzone-uploader">
+            <Button href="https://github.com/Kunwark/react-dropzone-uploader">
               Github
             </Button>
           </PromoSection>
@@ -121,7 +121,7 @@ class Index extends React.Component {
         <img
           className="gif"
           style={{ marginTop: 48, display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
-          src="https://raw.githubusercontent.com/fortana-co/react-dropzone-uploader/master/rdu.gif"
+          src="https://raw.githubusercontent.com/Kunwark/react-dropzone-uploader/master/rdu.gif"
           alt="rdu.gif"
         />
 

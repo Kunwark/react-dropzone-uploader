@@ -156,7 +156,7 @@ class DropzoneWithPreview extends React.Component {
 ## Contributing
 If you like RDU and want to make it better, read on!
 
-Possible improvements to RDU are tracked as [GitHub issues with the "__help wanted__" tag](https://github.com/fortana-co/react-dropzone-uploader/labels/help%20wanted).
+Possible improvements to RDU are tracked as [GitHub issues with the "__help wanted__" tag](https://github.com/Kunwark/react-dropzone-uploader/labels/help%20wanted).
 
 For example, I don't know much about writing tests for React components, and I know RDU would benefit from having them. I'd also like better support for older browsers.
 
@@ -167,7 +167,7 @@ I'd be super happy to give contributors complete control of implementing these f
 Clone the project, install dependencies, and run the dev server.
 
 ~~~sh
-git clone git://github.com/fortana-co/react-dropzone-uploader.git
+git clone git://github.com/Kunwark/react-dropzone-uploader.git
 cd react-dropzone-uploader
 npm install  # or `yarn install`
 npm run dev

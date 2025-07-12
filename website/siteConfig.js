@@ -13,7 +13,7 @@ const siteConfig = {
 
   // Used for publishing and more
   projectName: 'react-dropzone-uploader',
-  organizationName: 'fortana-co',
+  organizationName: 'Kunwark',
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
@@ -67,7 +67,7 @@ const siteConfig = {
   // Show documentation's last update time.
   // enableUpdateTime: true,
 
-  repoUrl: 'https://github.com/fortana-co/react-dropzone-uploader',
+  repoUrl: 'https://github.com/Kunwark/react-dropzone-uploader',
 
   usePrism: ['js', 'jsx'],
 }
